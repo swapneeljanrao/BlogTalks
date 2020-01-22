@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/new_blogpost_userPhoto"
+        android:layout_width="62dp"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_blogpost_edt_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/new_blogpost_edt_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userphoto" />
+
+    <EditText
+        android:id="@+id/new_blogpost_edt_title"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="@drawable/new_blogpost_popup_title_edittext_style"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/new_blogpost_userPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_blogpost_edt_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_blogpost_popup_title_edittext_style"
+        android:ems="10"
+        android:hint="description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_blogpost_edt_title" />
+
+    <ImageView
+        android:id="@+id/new_blogpost_imagePost"
+        android:layout_width="0dp"
+        android:layout_height="225dp"
+        android:background="#2d2d2d"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_blogpost_edt_description"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[12]" />
+
+    <ImageView
+        android:id="@+id/new_blogpost_editblog"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/circle_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/new_blogpost_imagePost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_blogpost_imagePost"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/edit_post" />
+
+    <ProgressBar
+        android:id="@+id/new_blogpost_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/new_blogpost_editblog"
+        app:layout_constraintEnd_toEndOf="@+id/new_blogpost_editblog"
+        app:layout_constraintStart_toStartOf="@+id/new_blogpost_editblog"
+        app:layout_constraintTop_toTopOf="@+id/new_blogpost_editblog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

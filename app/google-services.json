@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "724838014402",
+    "firebase_url": "https://blog-talks.firebaseio.com",
+    "project_id": "blog-talks",
+    "storage_bucket": "blog-talks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724838014402:android:751be29afdfe337b40ca5b",
+        "android_client_info": {
+          "package_name": "com.mrcoder.blogtalks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724838014402-ev6ll8ma0p2gqf0fi7gba0makftg3rsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZjhgS_Aqvqhd1G7gA1qCMXYRHHEuFUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724838014402-ev6ll8ma0p2gqf0fi7gba0makftg3rsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
